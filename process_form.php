@@ -1,7 +1,7 @@
 <?php
 // Database configuration
 $servername = "172.105.48.130";
-$username = "amitmandal1234"; // Update with your database username
+$username = "collegec_amitmandal1234"; // Update with your database username
 $password = "okzG)&U0Y0tY"; // Update with your database password
 $dbname = "collegec_amitmandal"; // Update with your database name
 
@@ -9,8 +9,8 @@ $dbname = "collegec_amitmandal"; // Update with your database name
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($conn) {
+    echo("Connection Success: ");
 }
 
 // Validate and sanitize input
@@ -28,7 +28,7 @@ $stmt->bind_param("sssss", $name, $mobile, $email, $subject, $comments);
 if ($stmt->execute()) {
     echo "<script>
             alert('Your message has been sent successfully!');
-            window.location.href = 'your_form_page.html'; // Replace with your form page URL
+            window.location.href = 'index.html'; // Replace with your form page URL
           </script>";
 } else {
     echo "<script>
