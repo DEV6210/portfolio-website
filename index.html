@@ -58,6 +58,98 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
 
+    <!-- Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #12151B;height: 50px;">
+                    <img src="/images/freelancer-logo-light.svg" alt="Profile Image" class="mb-3"
+                        style="width: auto; height: 30px;margin-top: 12px;" />
+
+                    <svg data-bs-dismiss="modal" aria-label="Close"
+                        style="color: #fff;cursor: pointer;font-weight: bold;" xmlns="http://www.w3.org/2000/svg"
+                        width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                        <path
+                            d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                    </svg>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column">
+                        <div
+                            style="background-image: url('/images/backgroundimage.png'); background-size: cover; background-position: center;height: 130px;">
+                            <img src="/images/home/home-5/img-2.png" alt="Profile Image" class="mb-3" style="width: 110px; height: 134px; object-fit:cover;position: absolute;
+                                margin-top: 18px;border-radius: 10px;margin-left: 20px;background-color: #fff;">
+                        </div>
+                        <div style="margin-top: 30px;">
+                            <div class="d-flex">
+                                <h2 class="fw-bold">Amit M. <span style="font-weight: 400;">@fullstackcoderx</span></h2>
+                                <img src="/images/verified-v2.svg" alt="Profile Image" class="mb-3"
+                                    style="width: 30px; height: 30px;margin-top: 5px;margin-left: 5px;" />
+                            </div>
+
+                            <img src="/images/ratings.png" alt="Profile Image" class="mb-3"
+                                style="width: auto; height: 30px;margin-left: -3px;margin-top: -10px;" />
+                            <p class="text-muted fw-bold" style="margin-top: -15px;">Fullstack Software Developer &
+                                Software Engineer</p>
+
+                            <p style="margin-top: -15px;">
+                                <span class="fw-bold"> $10 USD / Hour</span>
+                                ・
+                                <img src="/images/flag.webp" alt="Profile Image" class="mb-3"
+                                    style="width: auto; height: 15px;margin-top: 12px;margin-right: 5px;" />
+                                <span id="current-time">India (8:01 PM)</span>
+
+                                ・
+                                Joined on September 19, 2023
+                            </p>
+                            <script>
+                                function updateTime() {
+                                    const now = new Date();
+                                    const options = { hour: '2-digit', minute: '2-digit', hour12: true };
+                                    const timeString = now.toLocaleTimeString('en-IN', options);
+
+                                    const timeElement = document.getElementById('current-time');
+                                    timeElement.textContent = `India (${timeString})`;
+                                }
+                                // Update time every minute
+                                setInterval(updateTime, 60000);
+
+                                // Initial call to set time immediately on page load
+                                updateTime();
+                            </script>
+                            <p class="text-muted" style="margin-top: -5px;">
+                                Fullstack Developer proficient in Next.js, TypeScript, React, Node.js, MongoDB, Realm,
+                                Express.js, React Native, and Python. Specializing in web, mobile (Android & iOS), and
+                                desktop app development, I deliver scalable solutions across diverse platforms, ensuring
+                                innovation and client satisfaction.
+                            </p>
+                        </div>
+
+                        <a href="https://www.freelancer.com/u/fullstackcoderx" type="button" class="btn btn-primary mt-3">Request Service</a>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Trigger the modal with JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                var profileModal = new bootstrap.Modal(document.getElementById('profileModal'), {});
+                profileModal.show();
+            }, 10000); // 3000ms = 3 seconds
+        });
+    </script>
+
+    <!-- Link Bootstrap CSS & JS for modal functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
     <!-- light-dark mode button -->
     <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
         <i class="uil uil-brightness mode-dark mx-auto"></i>
@@ -87,8 +179,9 @@
                         <a href="#aboutme" class="nav-link ">About</a>
                     </li>
                     <li class="nav-item dropdown dropdown-hover">
-                        <a href="#hireme" class="nav-link ">Resume</a>
+                        <a href="/resume.html" class="nav-link ">Resume</a>
                     </li>
+
                     <li class="nav-item dropdown dropdown-hover">
                         <a href="#service" class="nav-link ">Service</a>
                     </li>
@@ -234,6 +327,14 @@
                                                         <i class="mdi mdi-github"></i>
                                                     </div>
                                                 </a>
+
+                                                <a href="" data-bs-toggle="modal" data-bs-target="#profileModal">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <img src="/images/freelancer-icon.png"
+                                                            style="height: 24px;width: 24px;" />
+                                                    </div>
+                                                </a>
+
                                             </div>
 
                                         </div>
@@ -241,7 +342,7 @@
                                         <div class="home-link d-inline-block mt-5">
                                             <div class="d-flex align-items-center">
                                                 <div class="btn-link ">
-                                                    <a href="" class="text-dark h6">
+                                                    <a href="/worksample.html" class="text-dark h6">
                                                         <div class="read-link btn-link-warning"><span>See my work
                                                             </span></div>
                                                     </a>
@@ -432,7 +533,7 @@
                                             <div class="col-10">
                                                 <div class="mt-4 pt-2">
                                                     <h5>Software Developer</h5>
-                                                    <p class="text-muted fs-15">2020-2024 (4 year Experience)</p>
+                                                    <p class="text-muted fs-15">2020-2024 (2+ year Experience)</p>
                                                     <p class="text-muted fs-15">
                                                         Software Developer with over 1.5 years of experience as a
                                                         Fullstack Software Developer at LearnAt and 4 months as a
@@ -900,7 +1001,7 @@
                     <!-- start slider -->
                     <div class="swiper-slide border-radius position-relative ">
                         <div class="user-image">
-                            <img src="https://media.licdn.com/dms/image/D5603AQE2djkmIKBDEw/profile-displayphoto-shrink_100_100/0/1690817041506?e=1723680000&v=beta&t=4KBUozyHkKe5h5ZgHxCyOGku-sbZpErYJYeus-uXz3A"
+                            <img src="/images/testimonial/vikash.jpeg"
                                 alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="text-center mt-4">
@@ -922,7 +1023,7 @@
                     <!-- start slider -->
                     <div class="swiper-slide border-radius position-relative ">
                         <div class="user-image">
-                            <img src="https://media.licdn.com/dms/image/D4D03AQHAdvfQ6U0tqA/profile-displayphoto-shrink_400_400/0/1715085324725?e=1723680000&v=beta&t=jkpfv174vrkgaBB0RYjDmnKvAZqAO6U3RFUf2JYLNGU"
+                            <img src="/images//testimonial/anil.jpeg"
                                 alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="text-center mt-4">
@@ -944,7 +1045,7 @@
                     <!-- start slider -->
                     <div class="swiper-slide border-radius position-relative ">
                         <div class="user-image">
-                            <img src="https://media.licdn.com/dms/image/D4E03AQFWHsjP9vQZkA/profile-displayphoto-shrink_400_400/0/1710660871274?e=1723680000&v=beta&t=E7Xr_sCqrnkZD2punu9eQIkZYL6oROPJv4cA9Vn-z64"
+                            <img src="/images/testimonial/samir.jpeg"
                                 alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="text-center mt-4">
@@ -970,7 +1071,7 @@
                     <!-- start slider -->
                     <div class="swiper-slide border-radius position-relative ">
                         <div class="user-image">
-                            <img src="https://media.licdn.com/dms/image/D5603AQEqF7QjPRl35Q/profile-displayphoto-shrink_100_100/0/1712675662983?e=1723680000&v=beta&t=OCVZuls8y8AiH2Ns9vl33PermcXfn7PIgtd4gykqHnU"
+                            <img src="/images/testimonial/alauddin.jpeg"
                                 alt="" class="avatar-md rounded-circle">
                         </div>
                         <div class="text-center mt-4">
