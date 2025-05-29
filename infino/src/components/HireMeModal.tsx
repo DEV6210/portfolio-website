@@ -147,7 +147,7 @@ const HireMeModal = ({ open, onOpenChange }: HireMeModalProps) => {
               {services.map((service, index) => (
                 <Card
                   key={service.title}
-                  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-transparent hover:border-l-cyber-purple"
+                  className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-transparent hover:border-l-cyber-purple animate-slide-in-right"
                 // style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <CardHeader>

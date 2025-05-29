@@ -44,19 +44,19 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               About <span className="text-cyber-purple">Me</span>
             </h2>
-            
+
             <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>
                 I'm <strong className="text-tech-blue">Amit Mandal</strong> — a passionate fullstack software developer and the mind behind <strong className="text-cyber-purple">Infino</strong>.
               </p>
-              
+
               <p>
-                With hands-on experience in building scalable, efficient, and innovative applications, I specialize in technologies like 
+                With hands-on experience in building scalable, efficient, and innovative applications, I specialize in technologies like
                 <strong className="text-neon-green"> React Native, Next.js, Python, Node.js, Laravel</strong>, and more.
               </p>
-              
+
               <p>
-                Whether it's web, mobile, or backend systems, I love turning complex problems into smart, automated solutions. 
+                Whether it's web, mobile, or backend systems, I love turning complex problems into smart, automated solutions.
                 As a freelancer, I've helped clients around the world build high-quality products that make a real impact.
               </p>
             </div>
@@ -65,7 +65,7 @@ const AboutSection = () => {
               <h3 className="text-xl font-semibold mb-4 text-tech-blue">🔧 Technical Expertise</h3>
               <div className="grid grid-cols-2 gap-3">
                 {skills.map((skill, index) => (
-                  <div 
+                  <div
                     key={skill}
                     className="flex items-center space-x-2 animate-slide-in-right p-2 rounded-lg hover:bg-white/60 transition-all duration-200"
                     style={{ animationDelay: `${index * 0.1}s` }}
@@ -78,7 +78,7 @@ const AboutSection = () => {
             </div>
 
             {/* Social Links Section */}
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <h3 className="text-xl font-semibold mb-4 text-tech-blue">🔗 Connect With Me</h3>
               <div className="space-y-3">
                 {socialLinks.map((link, index) => (
@@ -98,7 +98,7 @@ const AboutSection = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Right Side - Enhanced Visual */}
@@ -107,17 +107,17 @@ const AboutSection = () => {
               <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
               <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
               <div className="absolute top-1/2 left-1/2 w-16 h-16 bg-white/5 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
-              
+
               <div className="relative z-10 text-center">
                 <div className="w-24 h-24 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center animate-pulse-glow">
                   <span className="text-4xl">🚀</span>
                 </div>
-                
+
                 <h3 className="text-2xl font-bold mb-4">Innovation Without Limits</h3>
                 <p className="text-blue-100 mb-6">
                   Transforming ideas into reality through cutting-edge development and intelligent automation solutions.
                 </p>
-                
+
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="p-3 bg-white/10 rounded-lg">
                     <div className="text-2xl font-bold">100+</div>
@@ -142,6 +142,31 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
+
+      {/* Social Links Section */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+        <h3 className="text-xl font-semibold mb-4 text-tech-blue">🔗 Connect With Me</h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {socialLinks.map((link, index) => (
+            <a
+              key={link.name}
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center space-x-3 p-3 rounded-lg bg-white/60 backdrop-blur-sm hover:bg-white hover:shadow-md transition-all duration-200 ${link.color} animate-fade-in-up`}
+              style={{ animationDelay: `${0.5 + index * 0.1}s` }}
+            >
+              <span className="text-2xl">{link.icon}</span>
+              <div>
+                <div className="font-semibold">{link.name}</div>
+                <div className="text-sm opacity-75">{link.handle}</div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+
     </section>
   );
 };

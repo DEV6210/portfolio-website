@@ -10,14 +10,14 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 text-neon-green">Infino</h3>
             <p className="text-gray-400 mb-6 max-w-md">
-              Building automation solutions that transform how businesses operate. 
+              Building automation solutions that transform how businesses operate.
               Innovation meets practicality in every project.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-neon-green transition-colors duration-200">
+              <a href="https://www.linkedin.com/in/amit-mandal-80802926b/" className="text-gray-400 hover:text-neon-green transition-colors duration-200">
                 LinkedIn
               </a>
-              <a href="#" className="text-gray-400 hover:text-neon-green transition-colors duration-200">
+              <a href="https://github.com/DEV6210" className="text-gray-400 hover:text-neon-green transition-colors duration-200">
                 GitHub
               </a>
               <a href="#" className="text-gray-400 hover:text-neon-green transition-colors duration-200">

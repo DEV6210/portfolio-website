@@ -9,8 +9,8 @@ const ContactSection = () => {
       icon: Mail,
       title: 'Email Me',
       description: 'For project inquiries and collaborations',
-      value: 'amit@infino.dev',
-      link: 'mailto:amit@infino.dev',
+      value: 'amitmandal6210@gmail.com',
+      link: 'mailto:amitmandal6210@gmail.com',
       color: 'text-blue-600'
     },
     {
