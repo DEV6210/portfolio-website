@@ -60,7 +60,7 @@ const ProjectsSection = () => {
       description: 'MRS Hospital - Online Booking. Name, Address, Phone, Email, Gender.',
       tech: ['React Js', 'Node Js', 'Express Js', 'MySQL'],
       category: 'Web Apps',
-      image: '/images/hospital.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/hospital.png',
       link: 'https://booking.mrshospital.org/'
     },
     {
@@ -68,7 +68,7 @@ const ProjectsSection = () => {
       description: 'Insurance advisors with the mission to uplift the profession of insurance ...',
       tech: ['React Js', 'Node Js', 'Express Js', 'MySQL'],
       category: 'Web Apps',
-      image: '/images/pioneersoflic.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/pioneersoflic.png',
       link: 'https://pioneersoflic.com/'
     },
     {
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
       description: 'At Jya Trades, we are committed to helping you achieve financial success.',
       tech: ['React Js', 'Node Js', 'Express Js', 'MySQL'],
       category: 'Web Apps',
-      image: '/images/jyatrades.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/jyatrades.png',
       link: 'https://jyatrades.com/'
     },
     {
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       description: 'Expertise in a wide range of orthopedic treatments and procedures.',
       tech: ['React Js', 'NodeJs', 'MySQL'],
       category: 'Web Apps',
-      image: '/images/dranjali.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/dranjali.png',
       link: 'https://my.doctorezy.in/d0078'
     },
     {
@@ -92,7 +92,7 @@ const ProjectsSection = () => {
       description: 'DoctorEzy provides doctors with personalized apps and websites to enhance their online presence',
       tech: ['Wordpress'],
       category: 'Web Apps',
-      image: '/images/drappoint.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/drappoint.png',
       link: 'https://doctorezy.in/about-us/'
     },
     {
@@ -100,7 +100,7 @@ const ProjectsSection = () => {
       description: 'Book appointments with the best doctors near you in just a few clicks..',
       tech: ['React Js', 'NodeJs', 'ExpressJs', 'MySQL'],
       category: 'Web Apps',
-      image: '/images/drezy.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/drezy.png',
       link: 'https://doctorezy.in/doctors/'
     },
     {
@@ -140,7 +140,7 @@ const ProjectsSection = () => {
       description: 'Assist in early detection and awareness of diabetes through a modern, web-based interface.',
       tech: ['React Js', 'Python', 'AI/ML'],
       category: 'Web Apps',
-      image: '/images/diabetics.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/diabetics.png',
       link: 'https://github.com/DEV6210/Diabetes-Prediction-System-Using-Machine-Learning'
     },
     {
@@ -156,7 +156,7 @@ const ProjectsSection = () => {
       description: 'Social Media app Build using React Native with a MongoDB database is a dynamic and modern project.',
       tech: ['React Native', 'Nodejs', 'Express Js', 'MongoDB'],
       category: 'Mobile Apps',
-      image: '/images/and.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/and.png',
       link: 'https://github.com/DEV6210/ReactNative'
     },
     {
@@ -164,7 +164,7 @@ const ProjectsSection = () => {
       description: 'Marketplace for buying and selling project source code, templates, and digital assets.',
       tech: ['Next Js', 'MongoDB'],
       category: 'Web Apps',
-      image: '/images/codemarket.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/codemarket.png',
       link: 'https://github.com/DEV6210/codemarket'
     }
   ];
