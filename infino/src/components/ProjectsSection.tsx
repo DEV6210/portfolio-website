@@ -8,9 +8,17 @@ import { Link } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: 'Gallery - Photo, Video & Album',
+      description: 'Fast & secure gallery app to view, manage, and protect photos & videos.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/VNpaz0fzoTgHthw6o2dwr8-GXqOYugjtOpy3pTNGrFNBVySAkrHqZ1lu5iui5Qs_xvIs=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=gallery.photo.photoeditor.album.photovault.lockgallery&pcampaignid=web_share'
+    },
+    {
       title: 'QR Codes Scanner',
       description: 'QR Scanner & Barcode Reader, your all-in-one tool for fast, smart, and easy scanning and creation.',
-      tech: ['React Native', 'Firebase', 'Redux'],
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
       category: 'Mobile Apps',
       image: 'https://play-lh.googleusercontent.com/2opYITd5rVsFz3KgWEjSoNKXVNKby3uoCB8hApvNADuCAuTdvqFjXGMm_oASWmXei0c=w832-h470-rw',
       link: 'https://play.google.com/store/apps/details?id=com.thecodezenofficial.qrcodescanner'
