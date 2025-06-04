@@ -96,20 +96,20 @@ const ProjectsSection = () => {
       link: 'https://my.doctorezy.in/d0078'
     },
     {
-      title: 'DoctorEzy',
-      description: 'DoctorEzy provides doctors with personalized apps and websites to enhance their online presence',
-      tech: ['Wordpress'],
-      category: 'Web Apps',
-      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/drappoint.png',
-      link: 'https://doctorezy.in/about-us/'
-    },
-    {
       title: 'DoctorEzy - Book Appointments',
       description: 'Book appointments with the best doctors near you in just a few clicks..',
       tech: ['React Js', 'NodeJs', 'ExpressJs', 'MySQL'],
       category: 'Web Apps',
-      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/drezy.png',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/drappoint.png',
       link: 'https://doctorezy.in/doctors/'
+    },
+    {
+      title: 'DoctorEzy',
+      description: 'DoctorEzy provides doctors with personalized apps and websites to enhance their online presence',
+      tech: ['Wordpress'],
+      category: 'Web Apps',
+      image: 'https://raw.githubusercontent.com/DEV6210/portfolio-website/refs/heads/main/infino/public/images/drezy.png',
+      link: 'https://doctorezy.in/about-us/'
     },
     {
       title: 'Reward King - Gaming App',
