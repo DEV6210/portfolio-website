@@ -8,6 +8,30 @@ import { Link } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: 'WA Status Saver',
+      description: 'WA Status Saver makes it easy to save image and video statuses from the latest messaging apps.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/d5xESY6MarIkBUQAUDEkEfkv_S0l8j4lsHOFBGEqnT_SNeddiM_v59_q0LW2RGUsOw=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.infino.wastatussaver&pcampaignid=web_share'
+    },
+    {
+      title: 'Calculator: Hide Photo & Video',
+      description: 'Powerful app that lets you hide, view, and manage personal photos and videos behind a calculator.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/vrGo6X-q-LQgCqZfV4g7h-yVbVv92o7ces7LBlirBcBxHQ-NmRe09udOMihQKoT5kg=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.infino.calculatorlocker&pcampaignid=web_share'
+    },
+    {
+      title: 'QR & Barcode Scanner Pro',
+      description: 'Fast and accurate scanning of all popular QR codes and barcode types.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/ngrJdhbFRidvV1dxU1lAElYIglCqHM8gVrexQE7-XoB66UPRxbOgDnfsCvCF50fJNA=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.infino.qrscannerpro&pcampaignid=web_share'
+    },
+    {
       title: 'Gallery - Photo, Video & Album',
       description: 'Fast & secure gallery app to view, manage, and protect photos & videos.',
       tech: ['React Native', 'Firebase', 'Redux', 'Admob'],

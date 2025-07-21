@@ -4,6 +4,7 @@ const AboutSection = () => {
     'MERN Stack Development',
     'Next.js & React Native',
     'Node.js & Python',
+    'MongoDB & MySQL',
     'Java & C Programming',
     'PHP & Laravel',
     'Automation Engineering',
@@ -52,7 +53,7 @@ const AboutSection = () => {
 
               <p>
                 With hands-on experience in building scalable, efficient, and innovative applications, I specialize in technologies like
-                <strong className="text-neon-green"> React Native, Next.js, Python, Node.js, Laravel</strong>, and more.
+                <strong className="text-neon-green"> MERN Fullstack, Next.js, React Native, Node.js, Python, MongoDB, MySQL, AWS</strong> and more.
               </p>
 
               <p>
