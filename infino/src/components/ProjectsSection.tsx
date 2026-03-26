@@ -8,13 +8,29 @@ import { Link } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: 'Pay4Ezy: Recharge & Bills Pay',
+      description: 'Pay4Ezy is a digital recharge and bill payment application that helps users complete mobile, DTH, and utility bill payments in a simple and secure way.',
+      tech: ['React Native', 'Firebase', 'Redux'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/3ZwRB1HBE9_aMFkGeNyJ5LpvZETq3ABmhO815LK_SFC0Jrmxni21OdH5Kqn3GqHQj8iShgrAI6wDAJPUJObhgg=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.pay4ezy&pcampaignid=web_share'
+    },
+    {
+      title: 'DoctorEzy: Book Appointment',
+      description: 'DoctorEzy – Doctor Appointment Booking App that allows users to book and manage doctor appointments.',
+      tech: ['React Native', 'Firebase', 'Redux'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/nZAjwA-yt0gn7LUoFBcgicRPcw8ttGNrNRMBNOcpPoJsXQwtRaObtnbFglMchZG9gp4oxi2UFSj3TbzuLAbLLA=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.doctorezy&pcampaignid=web_share'
+    },
+    {
       title: 'Digital Khata: Hisab Kitab App',
       description: 'Track customer accounts, record transactions, and maintain income and expense records.',
       tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
       category: 'Mobile Apps',
       image: 'https://play-lh.googleusercontent.com/KdmLz2bGx8vK8YEYKWlDMicVYYv7gVy1QGNzoWZLQj5oFHjz0blO7fJ-IrXbFRc6sER6Oe6WMOV3WoWpUTo5oe0=w832-h470-rw',
       link: 'https://play.google.com/store/apps/details?id=com.infino.digitalkhata&pcampaignid=web_share'
-    }, ,
+    },
     {
       title: 'Baatchit: Chat & Video Calls',
       description: 'High-quality video and audio for 1-to-1. Send text, emojis, and media instantly.',
@@ -228,7 +244,7 @@ const ProjectsSection = () => {
   const categories = ['All', 'Desktop/PC Software', 'Mobile Apps', 'Web Apps'];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [visibleCount, setVisibleCount] = useState(7);
+  const [visibleCount, setVisibleCount] = useState(9);
 
   const filteredProjects = selectedCategory === 'All'
     ? projects
