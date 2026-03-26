@@ -8,6 +8,30 @@ import { Link } from 'lucide-react';
 const ProjectsSection = () => {
   const projects = [
     {
+      title: 'Digital Khata: Hisab Kitab App',
+      description: 'Track customer accounts, record transactions, and maintain income and expense records.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/KdmLz2bGx8vK8YEYKWlDMicVYYv7gVy1QGNzoWZLQj5oFHjz0blO7fJ-IrXbFRc6sER6Oe6WMOV3WoWpUTo5oe0=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.infino.digitalkhata&pcampaignid=web_share'
+    }, ,
+    {
+      title: 'Baatchit: Chat & Video Calls',
+      description: 'High-quality video and audio for 1-to-1. Send text, emojis, and media instantly.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/8QdT84T4fHOrKTHLnW0xMsfJ-ah3p3mlrYeVCqCd0ls9gFal0iKaFkjCmz3PjhPn6-_pGSwjB5H9Jdut_gNV=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.infino.baatchit&pcampaignid=web_share'
+    },
+    {
+      title: 'Tune Sphere: Music Player',
+      description: 'Tune Sphere is an audio player designed to play and organize music files stored on your device.',
+      tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
+      category: 'Mobile Apps',
+      image: 'https://play-lh.googleusercontent.com/pt10MFCqSF4dyKCrJvTw9h5Yb-w6YiooeaNKYcJbtfV7wKaDzyEkNQ5xeejc6_OyND3h=w832-h470-rw',
+      link: 'https://play.google.com/store/apps/details?id=com.infino.tunesphere&pcampaignid=web_share'
+    },
+    {
       title: 'WA Status Saver',
       description: 'WA Status Saver makes it easy to save image and video statuses from the latest messaging apps.',
       tech: ['React Native', 'Firebase', 'Redux', 'Admob'],
@@ -204,7 +228,7 @@ const ProjectsSection = () => {
   const categories = ['All', 'Desktop/PC Software', 'Mobile Apps', 'Web Apps'];
 
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(7);
 
   const filteredProjects = selectedCategory === 'All'
     ? projects

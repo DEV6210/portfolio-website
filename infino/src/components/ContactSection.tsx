@@ -79,7 +79,7 @@ const ContactSection = () => {
                 Let's transform your ideas into powerful automation solutions that drive real results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href='https://amitmandal.netlify.app/Amit_Manda_Resume.pdf'
+                <a href='https://amitmandal.netlify.app/Amit_Mandal_Resume.pdf'
                   download
                   className="bg-white text-tech-blue hover:bg-gray-100 font-semibold px-8  transition-all duration-200"
                   style={{ justifyContent: 'center', alignItems: 'center', textAlign: 'center', height: 50, display: 'flex', borderRadius: 10 }}
